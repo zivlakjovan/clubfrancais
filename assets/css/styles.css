@@ -39,9 +39,11 @@
   --cf-shadow: 0 18px 45px rgba(15, 33, 66, 0.08);
   --cf-radius: 1.75rem;
   --cf-content-width: min(1200px, 92vw);
+  --cf-header-offset: 140px;
   font-family: "Virage", "VirageWide", "VirageCondensed", "Helvetica", sans-serif;
   color: var(--cf-navy);
   background-color: var(--cf-cloud);
+  scroll-behavior: smooth;
 }
 
 *,
@@ -56,6 +58,11 @@ body {
   background: var(--cf-cloud);
   color: var(--cf-navy);
   min-height: 100vh;
+}
+
+section[id],
+article[id] {
+  scroll-margin-top: var(--cf-header-offset);
 }
 
 img {
