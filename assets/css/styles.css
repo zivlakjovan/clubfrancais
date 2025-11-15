@@ -204,6 +204,18 @@ main {
   align-items: center;
 }
 
+.hero.hero-home {
+  grid-template-columns: minmax(320px, 1.1fr) minmax(300px, 0.9fr);
+  align-items: start;
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+
+.hero.hero-home .hero-panels {
+  grid-column: 1 / -1;
+  margin-top: 0.5rem;
+}
+
 .hero-copy h1 {
   font-size: clamp(2.8rem, 5vw, 4.4rem);
   line-height: 1.05;
@@ -699,6 +711,12 @@ main {
 
   .hero {
     grid-template-columns: 1fr;
+  }
+  .hero.hero-home {
+    grid-template-columns: 1fr;
+  }
+  .hero.hero-home .hero-panels {
+    margin-top: 0;
   }
 
   main {
